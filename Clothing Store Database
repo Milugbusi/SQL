@@ -1,0 +1,27 @@
+--Create a clothing store database
+
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, material TEXT, originated TEXT, season TEXT, color TEXT);
+
+INSERT INTO clothing VALUES (1, "jackets", "$40", "wool", "russia", "winter", "green");
+INSERT INTO clothing VALUES (2, "dresses", "$20", "cotton", "california", "spring", "yellow");
+INSERT INTO clothing VALUES (3, "jeans", "$20", "denim", "mid_west", "fall", "blue");
+INSERT INTO clothing VALUES (4, "blouses", "$15", "silk", "Milan", "spring", "white");
+INSERT INTO clothing VALUES (5, "tshirts", "$10", "cotton", "south_east", "all_year", "tie_dyed");
+INSERT INTO clothing VALUES (6, "shoes", "$15", "rubber", "canada", "all_year", "black");
+INSERT INTO clothing VALUES (7, "hats", "$20", "leather", "mexico", "all_year", "multi_colored");
+INSERT INTO clothing VALUES (8, "belts", "$15", "leather", "mexico", "all_year", "brown");
+INSERT INTO clothing VALUES (9, "socks", "$08", "wool", "scottland", "winter", "brown");
+INSERT INTO clothing VALUES (10, "jewelry", "$15", "metal", "australia", "all_year", "silver");
+INSERT INTO clothing VALUES (11, "watches", "$50", "metal", "ukraine", "all_year", "gold");
+INSERT INTO clothing VALUES (12, "swim_suits", "$25", "spandex", "florida", "summer", "multi_colored");
+INSERT INTO clothing VALUES (13, "sunglasses", "$15", "plastic", "california", "all_year", "multi_colored");
+INSERT INTO clothing VALUES (14, "purses", "$20", "leather", "NYC", "all_year", "black");
+INSERT INTO clothing VALUES (15, "active_wear", "$20", "spandex", "california", "all_year", "multi_colored");
+
+SELECT * FROM clothing;
+
+--Display the database ordered by price
+SELECT * FROM clothing ORDER BY price asc;
+
+--Display the highest cost item
+SELECT max(price) FROM clothing;
